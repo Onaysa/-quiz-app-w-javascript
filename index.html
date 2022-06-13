@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap-grid.min.css"
+        integrity="sha512-QWjMsIpO5eW4+c4ASTEaZ4+eZNZ4YTtSDiu167Rq1Eqw//WlO+rXo4OvZMpyW/ykbN5LFeXmN6N416OzmWo7fA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Assets/style.css">
+
+</head>
+
+<body>
+    <!--<header class="highscore d-none"><a href="highscore.html">View Highscore</a></header>-->
+    <!--Start Quiz Button-->
+    <div class="startBtn"><button>Start Quiz</button></div>
+
+
+    <!--Info Box-->
+
+
+    <div class="infoBox">
+        <div class="info_title">
+            <span>Rules of the coding quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. Try to answer the followin code-related questions within the time limit.</div>
+            <div class="info">2. You will have only <span>75 seconds</span>per each question.</div>
+            <div class="info">3. Keep in mind that incorrect answers will penelize your screentime by ten seconds!</div>
+        </div>
+        <div class="buttons">
+
+            <button class="restart">Continue</button>
+
+
+        </div>
+    </div>
+    <!--Quiz Box-->
+    <div class="quizBox">
+        <header>
+            <div class="title">Quiz Questions</div>
+            <div class="timer">
+                <div class="timeText">Timer </div>
+                <div class="timer-sec">75</div>
+            </div>
+        </header>
+        <section>
+            <div class="question">
+              <span> </span> 
+            </div>
+           <div class="optionList">
+                <div class="option">
+                    <span>Strings</span>
+                    <div class="icon tick"><i class="fa-solid fa-circle-check fa-2xl"></i></div>
+                </div>
+                <div class="option">
+                    <span>Booleans</span>
+                    <div class="icon cross"><i class="fas fa-xmark fa-2xl"></i></div>
+                </div>
+                <div class="option">
+                    <span>Alerts</span>
+                </div>
+                <div  class="option">
+                    <span>Numbers</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Quiz Box Footer-->
+        <footer>
+            <div class="totalQue">
+               <!-- <span>  <p>2</p>of<p>5</p>Questions</span>-->
+            </div>
+            <button class="nextBtn">Next Que</button>
+
+        </footer>
+
+    </div>
+
+    <!--Result Box-->
+    <div class="resultBox">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="completeText">You've completed the Quiz</div>
+        <div class="scoreText">
+            <span>and sorry, You got only<p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+
+    </div>
+
+    <!--Link to external JavaScript file-->
+    <script src="Assets/script.js"></script>
+    <script src="./Assets/question.js"></script>
+    
+
+</body>
+
+</html>
