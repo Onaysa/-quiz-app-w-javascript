@@ -166,12 +166,12 @@ body {
   font-size: 25px;
   font-weight: 600;
 }
-.quizBox .section .optionList {
+.quizBox .section .option_list {
   padding: 20px 0;
   display: block;
 }
 
-section .optionList .option {
+section .option_list .option {
   background: #faf4ff;
   border: 1px solid #f2c0ff;
   border-radius: 5px;
@@ -184,15 +184,15 @@ section .optionList .option {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-section .optionList .option:hover {
+section .option_list .option:hover {
   color: #371b58;
   background: #dcc2f8;
   border-color: #f8ecfd;
 }
-.optionList .option:last-child {
+.option_list .option:last-child {
   margin-bottom: 0px;
 }
-.optionList .option .icon {
+.option_list .option .icon {
   height: 26px;
   width: 26px;
   border: 2px solid transparent;
@@ -201,7 +201,7 @@ section .optionList .option:hover {
   font-size: 13px;
   pointer-events: none;
 }
-.optionList .option .icon.tick {
+.option_list .option .icon.tick {
   color: #23903c;
   border-color: #23903c;
   margin-top: 0.9rem;
@@ -214,10 +214,23 @@ section .optionList .option:hover {
     margin-left: 0.2;
     margin-right: 0.2rem;
 }
-.optionList .option .icon.cross {
+.option_list .option .icon.cross {
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;
+}
+.option_list .option.correct{
+  color: #155724;
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+.option_list .option.incorrect{
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+}
+.option_list .option.disabled{
+pointer-events: none;
 }
 .quizBox footer {
   height: 60px;

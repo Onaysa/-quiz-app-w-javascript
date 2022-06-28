@@ -3,7 +3,7 @@ let questions = [
   {
       numb: 1,
       question: "Commonly used data type DO NOt include:",
-      answer: "Alert",
+      answer: "Alerts",
       options: [
           "Strings", 
           "Booleans", 
