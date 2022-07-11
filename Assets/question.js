@@ -2,7 +2,7 @@
 let questions = [
   {
       numb: 1,
-      question: "Commonly used data type DO NOt include:",
+      question: "Commonly used data type DO NOT include:",
       answer: "Alerts",
       options: [
           "Strings", 

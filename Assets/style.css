@@ -26,7 +26,8 @@ body {
     transition: all 0.3s ease;
 }
 .infoBox.activeInfo,
-.quizBox.activeQuiz{
+.quizBox.activeQuiz,
+.resultBox.activeResult{
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -107,6 +108,14 @@ body {
   background: #b762c1;
   color: #fff;
 }
+.buttons button.replay {
+  color: #b762c1;
+  border-color: #b762c1;
+}
+.buttons button.replay:hover {
+  background: #b762c1;
+  color: #fff;
+}
 .quizBox {
   width: 550px;
   background: #fff;
@@ -158,15 +167,25 @@ body {
   border: 1px solid #343a40;
   user-select: none;
 }
-.quizBox .section {
+
+.quizBox header .time_line{ 
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #b762c1;
+}
+
+.quizBox section {
   padding: 25px 30px;
   background: #fff;
 }
-.quizBox .section .question {
+.quizBox section .question {
   font-size: 25px;
   font-weight: 600;
 }
-.quizBox .section .option_list {
+.quizBox section .option_list {
   padding: 20px 0;
   display: block;
 }
@@ -252,6 +271,7 @@ footer .totalQue span p:first-child {
   padding-left: 0px;
 }
 footer .nextBtn {
+  display: none;
   height: 40px;
   padding: 0 13px;
   font-size: 18px;
